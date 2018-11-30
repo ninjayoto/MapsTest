@@ -7,10 +7,12 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label x:Name="Latitude"  Text="Welcome to Xamarin.Forms!" 
+        <Entry x:Name="DirSalida" Placeholder="Ingrese su direccion de salida" Completed="DirSalida_Completed" />
+        <Entry x:Name="DirDestino" Placeholder="Ingrese su direccion de Destino" Completed="DirDestino_Completed"/>
+        <Label x:Name="Latitude"  Text="Latitude: " 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-        <Label x:Name="Longitude"  Text="Welcome to Xamarin.Forms!" 
+        <Label x:Name="Longitude"  Text="Longitude: " 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         <maps:Map WidthRequest="320" HeightRequest="200"
